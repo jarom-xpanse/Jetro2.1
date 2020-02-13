@@ -1,0 +1,174 @@
+/* ASIDE  */
+aside {
+    flex: 3 1;
+    margin-left: 40px;
+}
+aside h2 {
+    font-family: bebas, sans-serif;
+    font-size: 20px;
+    color: #e8603c;
+}
+aside p, aside li {
+    font-family: "helvetica neue", sans-serif;
+}
+
+aside h2 {
+    margin-right: 16px;
+}
+.image-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 5px 5px;
+}
+
+.image-border {
+    background-color: #f3af9d;
+    border: 1px solid #e8603c;
+    width: 50px;
+    height: 50px;
+}
+
+/* TITLE BAR */
+.title-bar {
+    margin-bottom: 50px;
+}
+
+.title-bar .wrapper {
+    background: #e8603c;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.title-bar h2 {
+    text-transform: uppercase;
+    color: white;
+    padding-left: 20px;
+    font-family: bebas, sans-serif;
+}
+
+.about-portrait-image {
+    margin: 1em;
+}
+
+/* MAIN */
+main {
+    flex: 7 0 640px;
+    color: black;
+    text-align: justify;
+    text-align-last: left;
+}
+.main.flex {
+    flex-flow: column wrap;
+}
+main p {
+    font-size: 13px;
+}
+.about-image img {
+    border: 1px solid #cccccc;
+    padding: 2px;
+    margin: 20px;
+}
+.alert-text h4 {
+    padding: 0.3em 1.5em;
+}
+.alert-text .wrapper {
+    margin-top: 20px;
+}
+#at1 {
+    background: #effeb9;
+    border: 1px solid #98c601;
+    color: #98c601;
+}
+#at2 {
+    background: #fbcbc1;
+    border: 1px solid #eb5439;
+    color: #eb5439;
+}
+#at3 {
+    background: #ffe9ad;
+    border: 1px solid #fab418;
+    color: #fab418;
+}
+#at4 {
+    background: #d1e4f3;
+    border: 1px solid #4d8fcb;
+    color: #4d8fcb;
+}
+
+/* CAPITALIZE */
+em.capital {
+    font-size: 2em;
+    color: #e8603c;
+    font-weight: bold;
+    float: left;
+    font-style: normal;
+    padding-right: 0.1em;
+}
+.italicize {
+    font-style: italic;
+}
+
+.italicize span {
+    color: orange;
+    font-size: 50px;
+    float: left;
+    margin-top: -8px;
+    padding-left: 0.5em;
+    padding-right: 0.1em;
+    font-style: normal;
+}
+
+.flex-paragraph {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex-paragraph p {
+    flex: 1 1 300px;
+    padding: 0.5em;
+}
+
+#p1, #p2, {
+    flex: 1 1 300px;
+}
+#p3, #p4, #p5 {
+    flex: 1 1 180px;
+}
+.alert-text.flex {
+    flex-flow: column wrap;
+}
+
+.paragraph2 div {
+    flex: 1 1 100px;
+}
+.paragraph2 p {
+    flex: 5 1 300px;
+    margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 960px) {
+    .main.flex {
+        flex-basis: 100%;
+        display: block;
+        padding: 1rem;
+    }
+    
+}
+
+/* NOTE: MOBILE RESPONSIVE DIMENSION 480PX */
+/* MOBILE L - 425px (480px) */
+@media screen and (max-width: 480px){
+    section.title-bar {
+        margin: 0;
+    }
+    .paragraph2 {
+        justify-content: center;
+    }
+    .paragraph2 .about-image {
+        flex-grow: 0;
+    }
+    aside {
+        margin-left: 16px;
+    }
+}
